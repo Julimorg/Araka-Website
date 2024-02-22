@@ -21,3 +21,6 @@ Route::get('/', function () {
 Route::get('/homepage', function () {
     return view('homepage');
 });
+Route::get('/homepagetest', function () {
+    return view('homepage_testing');
+});

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="{{asset('assest/css/homepage.css')}}">
     <!-- Js File -->
     <script src="{{asset('assest/js/homepage.js')}}" defer></script>
+    
 <body>
             <!-- == HEADER == -->
 <div id="header">
@@ -32,13 +33,54 @@
                 <span>Khóa học của tôi</span>
             </button>
         </a>
-        <!-- Bell Icon -->
-        <div class="notification-icon">
-            <img src="{{asset('assest/img/423422719_1108689617214258_7816932868230117087_n.png')}}" alt="" class="bellImg">
+        <!-- Shopping -->
+        <div class="shopping_container">
+            <div class="shopCart_icon">
+                <i class="fa-solid fa-cart-shopping shoppingCart"></i>
+            </div>
+        <!-- Shopping Box -->
         </div>
-        <!-- Avatar profile -->
-        <div class="profileAvatar">
-            <img src="{{asset('assest/img/423221567_7135333573191069_509031383483258617_n.png')}}" alt="" class="AvaImg" >
+       <!-- Notification -->
+        <div class="notification_container">
+             <!-- Bell Icon -->
+            <button class="bellIcon">
+                <svg viewBox="0 0 448 512" class="bell"><path d="M224 0c-17.7 0-32 14.3-32 32V49.9C119.5 61.4 64 124.2 64 200v33.4c0 45.4-15.5 89.5-43.8 124.9L5.3 377c-5.8 7.2-6.9 17.1-2.9 25.4S14.8 416 24 416H424c9.2 0 17.6-5.3 21.6-13.6s2.9-18.2-2.9-25.4l-14.9-18.6C399.5 322.9 384 278.8 384 233.4V200c0-75.8-55.5-138.6-128-150.1V32c0-17.7-14.3-32-32-32zm0 96h8c57.4 0 104 46.6 104 104v33.4c0 47.9 13.9 94.6 39.7 134.6H72.3C98.1 328 112 281.3 112 233.4V200c0-57.4 46.6-104 104-104h8zm64 352H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7s18.7-28.3 18.7-45.3z"></path></svg>
+            </button>
+            <!-- Notice Box -->
+            <div class="notificaiont_box">
+                <div class="dropdow dropdown-1">
+                    <ul class="notiBox_menu notiBox_menu-1">
+                        <li class="notiBox_item"><a href="">23 task was returned from the workflow</a></li>
+                        <li class="notiBox_item"><a href="">23 task was returned from the workflow</a></li>
+                        <li class="notiBox_item"><a href="">23 task was returned from the workflow</a></li>
+                        <li class="notiBox_item"><a href="">23 task was returned from the workflow</a></li>
+                        <li class="notiBox_item"><a href="">23 task was returned from the workflow</a></li>
+                        <li class="notiBox_item"><a href="">23 task was returned from the workflow</a></li>
+                        <li class="notiBox_item"><a href="">23 task was returned from the workflow</a></li>
+                        <li class="notiBox_item"><a href="">23 task was returned from the workflow</a></li>
+                        <li class="notiBox_item"><a href="">23 task was returned from the workflow</a></li>
+                        <li class="notiBox_item"><a href="">23 task was returned from the workflow</a></li>
+                        <li class="notiBox_item"><a href="">23 task was returned from the workflow</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Profile User -->
+        <div class="user_container menu">
+            <!--User Avatar -->
+             <div class="profileAvatar">
+                <img src="{{asset('assest/img/423221567_7135333573191069_509031383483258617_n.png')}}" alt="" class="AvaImg" >
+                <!-- Profile drop Down -->
+            <div class="dropdown dropdown-1">
+                <ul class="dropdown_menu dropdown_menu-1">
+                 <li class="dropdown_item"><a href="">Trang Cá Nhân</a></li>
+                 <li class="dropdown_item"><a href="">Danh Sách Yêu Thích</a></li>
+                 <li class="dropdown_item"><a href="">Cài Đặt</a></li>
+                 <li class="dropdown_item"><a href="">Đăng Xuất</a></li>
+                </ul>
+            </div>
+            </div>
         </div>
     </div>    
 </div>
@@ -166,6 +208,7 @@
             </div>
             <!-- Content Course 1 -->
             <div class="content_course">
+                <!--  -->
                 <div class="content_item">
                     <div class="container">
                         <img src="{{asset('assest/img/tải xuống.png')}}" alt="" class="itemCourse">
@@ -340,9 +383,7 @@
                     <h3>HTML,CSS pro</h3>
                     <p>Ten Tac Gia</p>
                     <p>80000000+</p>
-                </div>   
-
-                 
+                </div>                    
             </div>
             </div>
             <!-- Slide Content 2 -->
@@ -558,8 +599,7 @@
                     <h3>HTML,CSS pro</h3>
                     <p>Ten Tac Gia</p>
                     <p>80000000+</p>
-                </div>      
-                
+                </div>                     
             </div>
              </div>
         </div>

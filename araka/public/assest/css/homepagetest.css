@@ -276,24 +276,26 @@ body
           transform: translateY(0);
         }
       } 
-        /* ==> ScrollBar for Drop Down Menu  */
 /* Tùy chỉnh thanh cuộn cho dropdown menu */
 .notiBox_menu::-webkit-scrollbar {
-    width: 6px; 
+    width: 10px; /* Chiều rộng của thanh cuộn */
 }
+
 /* Thanh cuộn phần trên và phần dưới của thanh cuộn */
 .notiBox_menu::-webkit-scrollbar-track {
-    background-color: #f1f1f1; 
-    border-radius: 5px; 
+    background-color: #f1f1f1; /* Màu nền của thanh cuộn */
+    border-radius: 5px; /* Độ cong viền */
 }
+
 /* Thumb - Phần di chuyển trên thanh cuộn */
 .notiBox_menu::-webkit-scrollbar-thumb {
-    background-color: #888; 
-    border-radius: 5px; 
+    background-color: #888; /* Màu nền của thumb */
+    border-radius: 5px; /* Độ cong viền */
 }
+
 /* Thumb khi hover */
 .notiBox_menu::-webkit-scrollbar-thumb:hover {
-    background-color: #555; 
+    background-color: #555; /* Màu nền của thumb khi hover */
 }    
         /* ==> Bell Icon */
 .bellIcon {
@@ -450,7 +452,7 @@ body
     cursor: pointer;
 }
 
-/*  == CONTENT == */
+/*  == CONTENT PAGE == */
 #content 
 {
     margin-left: 1px;
@@ -551,7 +553,7 @@ button {
     );
     transition: all 0.475s;
 }
-/* Content Page */
+          /* ===> Main Content*/
 #main_content
 {
     margin-top: -3px;
@@ -563,7 +565,7 @@ button {
     padding: 20px;
     right: auto;
 }
-/* Slider swiper item*/
+            /* ===>Slider swiper item*/
 .slider{
    width: 1082px;
     height: 320px;
@@ -628,7 +630,7 @@ button {
 .slider .dots li.active{
     width: 30px;
 }
-/* Slide img item */
+          /* ==>Slide img item */
 .itemImg
 {
     height: 320px;
@@ -706,7 +708,7 @@ button {
     height: 35px;
     box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
 }
-/* Content Course */
+          /* ==> Content Course 1 and 2 */
 .content_course
 {
     overflow: hidden;
@@ -724,7 +726,7 @@ button {
 .content_item
 {
     min-width: calc(37% - 3.05rem);
-    
+
 }
 .content_course.active 
 {
@@ -747,14 +749,7 @@ button {
 {
     padding: 0 10px;
 }
-.content_item h3, .content_item2 h3 
-{
-    padding-top: 10px;   
-}
-.content_item p:nth-child(3), .content_item2 p:nth-child(3)
-{
-    opacity: 0.4;
-}
+
 /* Item Img */
 .itemCourse 
 {
@@ -765,65 +760,7 @@ button {
     transition: all 0.5s;
     z-index: 1;
 }
-.itemCourse:hover
-{
-    opacity: 0.6;
-    transform: scale(1.05);
-}
-.itemCoures:active{
-    transform: scale(0.95) rotateZ(1.7deg);
-}
-/* Starting button */
-.container {
-    position: relative;
-} 
-.heart_icon
-{
-    display:inline-flex;
-    position: absolute;
-    top: 10px;
-    left:10px;
-    cursor: pointer;
-    opacity: 0;
-    font-size: 20px;
-    background-color:  #33E288;
-    border-radius: 10px;
-    padding: 4px;
-    transition: opacity .5s ease;
-}
-.start_btn 
-{
-    display:inline-flex;   
-    position: absolute;
-    width: 150px;
-    height: 40px ;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    opacity: 0;
-    top: 45%;
-    left: 32%;
-    right:auto;
-    transition: opacity .5s ease;
-}
-.forward_icon
-{
-    margin-left:8px;
-    padding-left:8px;
-    padding-right: 6px;
-    font-size: 20px;
-    align-items: center;
-    border-radius: 20px;
-    background-color: #33E288;
-}
-.container:hover .start_btn,.container:hover .heart_icon
-{
-    opacity: 1;
-}
-.content_item h3 , p
-{
-    padding: 10px 0;
-}
+
 /* == FOOTERPAGE == */
 footer {
     background-color: #151C1B;

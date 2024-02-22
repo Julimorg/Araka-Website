@@ -1,3 +1,31 @@
+// Drop Down menu 
+document.addEventListener("DOMContentLoaded", function () {
+    // Lấy các phần tử dropdown và dropdown_menu
+    var Notidropdown = document.querySelector(".bellIcon");
+    var NotidropdownMenu = document.querySelector(".notiBox_menu");
+    var dropdown = document.querySelector(".profileAvatar");
+    var dropdownMenu = document.querySelector(".dropdown_menu");
+
+    // Hàm để ẩn dropdown menu
+    function hideDropdownMenu(menu) {
+        menu.style.display = "none";
+    }
+
+    // Thêm sự kiện click vào biểu tượng thông báo
+    Notidropdown.addEventListener("click", function () {
+        NotidropdownMenu.style.display = (NotidropdownMenu.style.display === "block") ? "none" : "block";
+        // Ẩn dropdown menu của profile (nếu đang hiển thị)
+        hideDropdownMenu(dropdownMenu);
+    });
+
+    // Thêm sự kiện click vào biểu tượng profile
+    dropdown.addEventListener("click", function () {
+        dropdownMenu.style.display = (dropdownMenu.style.display === "block") ? "none" : "block";
+        // Ẩn dropdown menu thông báo (nếu đang hiển thị)
+        hideDropdownMenu(NotidropdownMenu);
+    });
+});
+
 
 // Content Couse && Course_item
 const slider = document.querySelector('.content_course');
@@ -57,10 +85,7 @@ function reloadSlider(){
 
     clearInterval(refreshInterval);
     refreshInterval = setInterval(()=> {next.click()}, 3000);
-
-    
 }
-
 dots.forEach((li, key) => {
     li.addEventListener('click', ()=>{
          active = key;
